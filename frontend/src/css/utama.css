@@ -1,0 +1,15 @@
+/* Satu pintu untuk semua stylesheet. Halaman HTML cukup memuat file ini. */
+@import url('./dasar/variabel.css');
+@import url('./dasar/reset.css');
+@import url('./dasar/tipografi.css');
+@import url('./komponen/navbar.css');
+@import url('./komponen/tombol.css');
+@import url('./komponen/kartu.css');
+@import url('./komponen/form.css');
+@import url('./komponen/modal.css');
+@import url('./komponen/tabel.css');
+@import url('./halaman/landing.css');
+@import url('./halaman/siswa.css');
+@import url('./halaman/guru.css');
+@import url('./halaman/admin.css');
+@import url('./responsif.css');

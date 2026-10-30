@@ -1,0 +1,2 @@
+/* Halaman guru banyak memakai komponen bersama (kartu, item-daftar, statistik). */
+.kotak-statistik { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }

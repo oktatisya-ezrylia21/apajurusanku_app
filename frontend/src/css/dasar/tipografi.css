@@ -1,0 +1,9 @@
+/* Skala tipografi. Font Fredoka dimuat dari <link> pada tiap halaman HTML. */
+h1 {
+  font: 700 clamp(46px, 11vw, 108px)/.95 'Fredoka', sans-serif;
+  margin: .1em 0; text-transform: uppercase; color: #fff;
+}
+h2 { font: 700 26px 'Fredoka', sans-serif; text-transform: uppercase; margin: 34px 0 14px; }
+h3 { font: 700 28px 'Fredoka', sans-serif; margin: 0 0 14px; }
+label { display: block; font-weight: 600; font-size: 14px; margin: 12px 0 5px; }
+.petunjuk { font-size: 14px; margin: 10px 0 0; color: #2d4a4f; }

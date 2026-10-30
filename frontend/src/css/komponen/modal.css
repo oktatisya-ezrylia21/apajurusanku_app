@@ -1,0 +1,14 @@
+/* Modal (jendela konfirmasi) dan toast (notifikasi singkat). */
+#modal {
+  position: fixed; inset: 0; z-index: 20; background: rgba(0,0,0,.5);
+  display: none; place-items: center; padding: 20px;
+}
+#modal.tampil { display: grid; }
+#modal .panel { max-width: 420px; width: 100%; }
+
+#toast {
+  position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+  background: var(--tinta); color: #fff; padding: 12px 22px; border-radius: 99px; z-index: 30;
+  display: none; font-weight: 500; max-width: 90vw; text-align: center;
+}
+#toast.tampil { display: block; }

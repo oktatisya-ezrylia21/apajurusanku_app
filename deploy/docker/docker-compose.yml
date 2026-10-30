@@ -1,0 +1,20 @@
+# Jalankan:  docker compose -f deploy/docker/docker-compose.yml up -d --build
+services:
+  apajurusanku:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      JWT_RAHASIA: "${JWT_RAHASIA:?isi JWT_RAHASIA}"
+      ADMIN_USERNAME: "${ADMIN_USERNAME:-admin}"
+      ADMIN_KATA_SANDI: "${ADMIN_KATA_SANDI:?isi ADMIN_KATA_SANDI}"
+      CORS_ASAL: "${CORS_ASAL:-http://localhost:3000}"
+    volumes:
+      - data_sqlite:/data                       # file database tetap ada walau container diganti
+      - ../../backend/unggahan:/app/backend/unggahan
+    restart: unless-stopped
+
+volumes:
+  data_sqlite:

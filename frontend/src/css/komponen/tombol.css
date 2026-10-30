@@ -1,0 +1,27 @@
+.tombol {
+  border: 0; border-radius: 99px; padding: 13px 26px; cursor: pointer;
+  font: 600 16px 'Fredoka', sans-serif; text-decoration: none; display: inline-block; text-align: center;
+  transition: transform .15s;
+}
+.tombol:hover { transform: translateY(-2px); }
+.tombol:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+.tombol-putih { background: #fff; color: var(--tinta); }
+.tombol-garis { background: rgba(255,255,255,.14); color: #fff; border: 2px solid #fff; }
+.panel .tombol-garis { background: #fff; color: var(--tinta); border-color: var(--tinta); }
+.tombol-kuning { background: var(--matahari); color: var(--tinta); }
+.tombol-teal { background: var(--teal); color: #fff; }
+.tombol-penuh { width: 100%; margin-top: 16px; }
+
+.tombol-mini {
+  border: 0; border-radius: 99px; padding: 5px 12px; margin-right: 4px; cursor: pointer;
+  font: 600 13px 'Fredoka', sans-serif;
+}
+.tombol-mini.kuning { background: var(--matahari); color: var(--tinta); }
+.tombol-mini.teal { background: var(--teal); color: #fff; }
+
+.tombol-kembali {
+  background: none; border: 0; padding: 0 0 10px; cursor: pointer;
+  font: 600 15px 'Fredoka', sans-serif; color: var(--tinta); text-decoration: underline;
+}
+.baris-tombol { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.baris-tombol.kiri { justify-content: flex-start; }

@@ -1,0 +1,7 @@
+.tata-admin { display: grid; grid-template-columns: 200px 1fr; gap: 20px; align-items: start; }
+.menu-samping { display: flex; flex-direction: column; gap: 6px; background: var(--teal-gelap); border-radius: 20px; padding: 14px; }
+.menu-samping button {
+  border: 0; background: none; color: #fff; text-align: left; padding: 10px 12px; border-radius: 12px;
+  font: 600 15px 'Fredoka', sans-serif; cursor: pointer;
+}
+.menu-samping .aktif { background: var(--matahari); color: var(--tinta); }

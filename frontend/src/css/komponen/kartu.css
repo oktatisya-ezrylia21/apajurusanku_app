@@ -1,0 +1,46 @@
+.panel {
+  background: var(--kartu); color: var(--tinta); border-radius: var(--jari-jari-panel);
+  padding: clamp(18px, 3vw, 32px); box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+.panel-sempit { max-width: 520px; margin: 3vh auto; }
+.panel-lebar { max-width: 680px; }
+.baris-atas { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+/* Kartu pilih peran di landing page */
+.kartu-peran {
+  border-radius: 22px; overflow: hidden; background: var(--kartu); color: var(--tinta);
+  cursor: pointer; border: 0; padding: 0; text-align: left; text-decoration: none; display: block;
+  box-shadow: 0 12px 26px rgba(0,0,0,.18); transition: transform .2s;
+}
+.kartu-peran:hover { transform: translateY(-6px); }
+.ilustrasi {
+  height: 180px; box-sizing: border-box; padding: 10px 0; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.ilustrasi img { height: 160px; width: auto; max-width: 90%; object-fit: contain; filter: drop-shadow(0 6px 6px rgba(0,0,0,.18)); }
+.teks-kartu { padding: 14px 16px 18px; }
+.teks-kartu b { font-size: 20px; display: block; }
+.teks-kartu span { font-size: 14px; }
+
+/* Item daftar (baris informasi / tombol baris) */
+.item-daftar {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 12px 16px; border: 2px solid var(--garis); border-radius: 16px; background: #fff;
+  margin: 8px 0; color: var(--tinta); width: 100%; text-align: left; font: 500 16px 'Fredoka', sans-serif;
+}
+.item-daftar.blok { display: block; }
+button.item-daftar { cursor: pointer; }
+button.item-daftar:hover { border-color: var(--tinta); }
+.item-daftar.selesai { background: var(--lembut); }
+
+.judul-bagian { background: var(--lembut); border-radius: 12px; padding: 8px 14px; font-weight: 600; margin: 14px 0 6px; }
+.statistik { text-align: center; border: 2px solid var(--garis); border-radius: 20px; padding: 14px; }
+.statistik b { font: 700 52px 'Fredoka', sans-serif; display: block; line-height: 1; }
+
+.lencana {
+  display: inline-block; background: var(--teal); color: #fff; border-radius: 99px; border: 0;
+  padding: 3px 12px; margin: 4px 4px 0 0; font: 600 13px 'Fredoka', sans-serif; cursor: pointer; text-decoration: none;
+}
+.lencana.kuning { background: var(--matahari); color: var(--tinta); }
+.lencana.garis { background: #fff; color: var(--tinta); border: 1.5px solid var(--tinta); }
+.lencana.nonaktif { opacity: .4; pointer-events: none; }

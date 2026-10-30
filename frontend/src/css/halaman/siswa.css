@@ -1,0 +1,32 @@
+.progres { height: 10px; border-radius: 9px; background: #d3eaec; overflow: hidden; margin: 10px 0 16px; }
+.progres i { display: block; height: 100%; background: var(--teal); transition: width .3s; }
+.kotak-soal { background: var(--teal); color: #fff; border-radius: 18px; padding: 16px; font-weight: 600; font-size: 18px; margin-bottom: 14px; }
+.pilihan-soal { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.kartu-pilihan {
+  border: 2px solid var(--garis); background: #fff; border-radius: 20px; padding: 12px;
+  text-align: center; cursor: pointer; font: 500 15px 'Fredoka', sans-serif; color: var(--tinta);
+}
+.panel-soal { max-width: 760px; background: transparent; box-shadow: none; padding: 0; color: #fff; }
+.kartu-pilihan:hover { border-color: var(--tinta); transform: translateY(-3px); }
+.kartu-pilihan .maskot {
+  display: grid; place-items: center; width: 100%; aspect-ratio: 1 / 1; border-radius: 14px;
+  background: #000; margin-bottom: 8px; overflow: hidden;   /* gambar maskot berlatar hitam: kotak ikut hitam agar menyatu */
+}
+.kartu-pilihan .maskot img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.kartu-pilihan .maskot-teks { color: #fff; font: 600 18px 'Fredoka', sans-serif; padding: 8px; }
+
+.kotak-hasil { display: flex; align-items: center; gap: 16px; background: var(--teal); color: #fff; border-radius: 20px; padding: 16px; margin-bottom: 14px; }
+.cincin { width: 72px; height: 72px; flex: none; border-radius: 50%; display: grid; place-items: center; font-weight: 700; }
+.cincin b { background: var(--teal); width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; }
+.grid-chip { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.chip {
+  display: flex; align-items: center; gap: 8px; padding: 11px 14px; border-radius: 14px; border: 2px solid var(--garis);
+  background: #fff; font: 500 16px 'Fredoka', sans-serif; color: var(--tinta); cursor: pointer; text-align: left;
+}
+.chip:hover { border-color: var(--tinta); }
+.chip .nomor { background: var(--matahari); width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-size: 13px; font-weight: 700; flex: none; }
+
+.tab-radius { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+.tab-radius button { border: 2px solid var(--garis); background: #fff; color: var(--tinta); border-radius: 99px; padding: 7px 14px; font: 500 14px 'Fredoka', sans-serif; cursor: pointer; }
+.tab-radius .aktif { background: var(--matahari); border-color: var(--tinta); }
+.peta { width: 100%; height: 300px; border: 0; border-radius: 20px; margin-bottom: 12px; background: var(--lembut); }

@@ -1,0 +1,26 @@
+/* Reset ringan + latar belakang bertekstur. */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0; min-height: 100vh;
+  font-family: 'Fredoka', system-ui, sans-serif;
+  color: #fff; background: var(--teal);
+}
+/* Menutup area poni/notch ponsel agar warnanya senada dengan navbar. */
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 10; background: var(--teal-gelap);
+}
+button, input, select { font-family: inherit; }
+main { max-width: 1100px; margin: 0 auto; padding: 10px clamp(14px, 4vw, 40px) 60px; }
+
+.latar {
+  position: fixed; inset: 0; z-index: -1; overflow: hidden;
+  background: radial-gradient(ellipse at 25% 15%, #1b8e9c, transparent 60%),
+              radial-gradient(ellipse at 85% 80%, var(--teal-gelap), transparent 55%), var(--teal);
+}
+.latar::before {
+  content: ""; position: absolute; inset: -30%; transform: rotate(-28deg); opacity: .5;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><filter id='f'><feTurbulence type='fractalNoise' baseFrequency='.004 .07' numOctaves='3' seed='7'/><feColorMatrix values='0 0 0 0 .25  0 0 0 0 .75  0 0 0 0 .8  0 0 0 2.2 -.97'/></filter><rect width='600' height='600' filter='url(%23f)'/></svg>");
+}
+:focus-visible { outline: 3px solid var(--matahari); outline-offset: 2px; }

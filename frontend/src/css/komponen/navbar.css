@@ -1,0 +1,13 @@
+nav {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  display: flex; align-items: center; gap: 14px;
+  padding: 12px clamp(14px, 4vw, 40px); background: var(--teal-gelap);
+}
+.merek { font-weight: 700; font-size: 21px; color: #fff; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+.logo-merek { height: 36px; width: auto; display: block; }
+.menu-nav { display: flex; gap: 6px; margin: 0 auto; }
+.menu-nav a {
+  color: #fff; text-decoration: none; font-weight: 500; font-size: 15px;
+  padding: 8px 14px; border-radius: 99px;
+}
+.menu-nav a.aktif { background: #fff; color: var(--tinta); }

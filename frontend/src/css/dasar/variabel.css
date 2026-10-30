@@ -1,0 +1,15 @@
+/* Variabel desain (warna, ukuran). Ubah tema aplikasi cukup dari file ini. */
+:root {
+  --tinta: #082b31;        /* warna teks gelap */
+  --kartu: #ffffff;        /* latar kartu/panel */
+  --garis: #b8d8dc;        /* warna garis tepi */
+  --matahari: #ffc21a;     /* kuning aksen */
+  --teal: #0b5560;         /* warna utama (deep teal) */
+  --teal-gelap: #06343c;   /* navbar & menu samping */
+  --lembut: #e3f2f4;       /* latar lembut */
+  --jari-jari-panel: 26px;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  color-scheme: light;
+}

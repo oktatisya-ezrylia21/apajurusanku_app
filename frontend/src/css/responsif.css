@@ -1,0 +1,15 @@
+/* Penyesuaian layar kecil (ponsel) dan pencetakan laporan. */
+@media (max-width: 700px) {
+  .menu-nav { display: none; }
+  nav .tombol { margin-left: auto; padding: 9px 18px; }
+  .pilihan-soal { gap: 8px; }
+  .tata-admin { grid-template-columns: 1fr; }
+  .menu-samping { flex-direction: row; overflow-x: auto; }
+  .menu-samping button { white-space: nowrap; }
+}
+@media print {
+  nav, .tanpa-cetak, .latar, body::before { display: none !important; }
+  body { background: #fff; color: var(--tinta); }
+  .panel { box-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

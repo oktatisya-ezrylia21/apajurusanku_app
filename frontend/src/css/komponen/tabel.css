@@ -1,0 +1,4 @@
+.tabel-gulir { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 440px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #d3e4e6; font-size: 15px; vertical-align: top; }
+th { border-bottom: 2px solid var(--tinta); }

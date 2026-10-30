@@ -1,0 +1,37 @@
+{
+  "name": "apajurusanku-backend",
+  "version": "1.0.0",
+  "description": "API apajurusanku: tes minat dan rekomendasi jurusan SMK",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrasi": "node src/basisdata/migrasi/jalankanMigrasi.js",
+    "benih": "node src/basisdata/benih/jalankanBenih.js",
+    "benih:ulang": "node src/basisdata/benih/jalankanBenih.js --ulang",
+    "cek:gambar": "node skrip/cekGambarSoal.js",
+    "lint": "eslint src tes",
+    "test": "node --test",
+    "sinkron": "node src/basisdata/benih/sinkronDatabase.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "supertest": "^7.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+.env
+backend/unggahan/*
+!backend/unggahan/.gitkeep
+backend/data/
+*.sqlite
+*.log
